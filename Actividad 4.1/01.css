@@ -1,0 +1,52 @@
+
+body {
+    background-color: #a797ad;
+    font-family: Arial, sans-serif;
+  }
+  
+  input[type=text], input[type=number], input[type=email], input[type=color], input[type=date], textarea {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    background-color: #e0e0e0;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #333;
+  }
+  
+  button[type=submit], button#boton-dialogo, button#boton-cerrar-dialogo {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type=submit]:hover, button#boton-dialogo:hover, button#boton-cerrar-dialogo:hover {
+    background-color: #555;
+  }
+  
+  details {
+    margin-top: 20px;
+  }
+  
+  dialog {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 400px;
+  }
+  
+  dialog button {
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+  }
+  

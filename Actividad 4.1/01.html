@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario Actividad 4.1</title>
+	<link rel="stylesheet" href="01.css">
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend>Datos personales</legend>
+			<label for="nombre">Nombre:</label>
+			<input type="text" id="nombre" name="nombre" required>
+
+			<label for="apellidos">Apellidos:</label>
+			<input type="text" id="apellidos" name="apellidos" required>
+
+			<label for="edad">Edad:</label>
+			<input type="number" id="edad" name="edad" min="18" max="100" required>
+
+			<label for="email">Correo electrónico:</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="pais">País Europeo:</label>
+			<select id="pais" name="pais">
+				<option value="España">España</option>
+				<option value="Portugal">Portugal</option>
+				<option value="Francia">Francia</option>
+				<option value="Inglaterra">Inglaterra</option>
+				<option value="Alemania">Alemania</option>
+				<option value="Italia">Italia</option>
+				<option value="Rusia">Rusia</option>
+				<option value="Paises Bajos">Paises Bajos</option>
+				<option value="otro">Otro</option>
+			</select>
+		</fieldset>
+
+		<fieldset>
+			<legend>Preferencias</legend>
+			<label for="hobbies">Hobbies:</label>
+			<textarea id="hobbies" name="hobbies" rows="5"></textarea>
+
+			<label for="color-favorito">Color favorito:</label>
+			<input type="color" id="color-favorito" name="color-favorito" value="#ff0000">
+
+			<label for="fecha-nacimiento">Fecha de nacimiento:</label>
+			<input type="date" id="fecha-nacimiento" name="fecha-nacimiento">
+		</fieldset>
+
+		<button type="submit">Enviar</button>
+	</form>
+
+	<details>
+		<summary>Información adicional</summary>
+		<p>Actividad realizada por Amos Rosado Morales</p>
+	</details>
+
+	<button id="boton-dialogo">Abrir diálogo</button>
+
+	<dialog>
+		<p>Has abierto el Dialog</p>
+		<button type="button" id="boton-cerrar-dialogo">Cerrar</button>
+	</dialog>
+	<script>
+		const botonDialogo = document.getElementById("boton-dialogo");
+		const dialogo = document.querySelector("dialog");
+	  
+		botonDialogo.addEventListener("click", () => {
+		  dialogo.showModal();
+		});
+	  
+		const botonCerrarDialogo = document.getElementById("boton-cerrar-dialogo");
+	  
+		botonCerrarDialogo.addEventListener("click", () => {
+		  dialogo.close();
+		});
+		
+	  </script>
+</body>
+</html>
